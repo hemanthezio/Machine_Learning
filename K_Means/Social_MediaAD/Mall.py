@@ -37,9 +37,6 @@ def reinit(k,cluster,data_arr,centroid):
 
 #Kmeans algorithm
 def kmeans(k,max_itr,x):
-    '''k=3
-    max_itr=50
-    x=X'''
     cluster=[]
     wcss=[]
     centroid=[]
