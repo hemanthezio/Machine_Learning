@@ -15,9 +15,7 @@ from scipy.spatial import distance
 
 #Reinitalize means
 def reinit(k,cluster,data_arr,centroid):
-    '''summ=np.zeros(shape=(k,2))
-    count=np.zeros(shape=(k,1))'''
-    summ=np.zeros((k,4))
+    summ=np.zeros((k,len(data_arr[0])))
     count=[]
     
     for p in range(k):
@@ -35,9 +33,6 @@ def reinit(k,cluster,data_arr,centroid):
 
 #Kmeans algorithm
 def kmeans(k,max_itr,x):
-    '''k=3
-    max_itr=50
-    x=X'''
     cluster=[]
     wcss=[]
     centroid=[]
