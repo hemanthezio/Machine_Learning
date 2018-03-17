@@ -106,7 +106,7 @@ plt.show()
 k=5
 cluster,centroid,wcss=kmeans(k,3000,X)
 count=[]
-for p in range(3):
+for p in range(k):
         index = np.where(cluster==p)[0]
         count.append(index.shape[0])
         
